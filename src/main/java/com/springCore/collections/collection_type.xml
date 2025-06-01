@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- List -->
+	<bean>
+		<property name="">
+			<list>
+				<value>10</value>
+				<value>20</value>
+				<value>30</value>
+				<value>40</value>
+				<null />
+			</list>
+		</property>
+	</bean>
+	
+	<!-- Set -->
+	<bean>
+		<property name="">
+			<set>
+				<value>10</value>
+				<value>20</value>
+				<value>30</value>
+				<value>40</value>
+			</set>
+		</property>
+	</bean>
+	
+	<!-- Map -->
+	<bean>
+		<property name="">
+			<map>
+				<entry key="java" value="2month" />
+				<entry key="python" value="1month" />
+			</map>
+		</property>
+	</bean>
+	
+	<!--properties-->
+	<bean>
+		<property name="">
+			<props>
+				<prop key="name">deepak</prop>
+				<prop key="college">mnnit</prop>
+			</props>
+		</property>
+	</bean>
+	
+</beans>
