@@ -15,6 +15,11 @@
 		<property name="city" value="chennai" /> 
 	</bean>
 	
+	<bean class="com.springCore.auto.wire.annotation.Address" name="address2">
+		<property name="street" value="second cross street"/>
+		<property name="city" value="delhi" /> 
+	</bean>
+	
 	<bean class="com.springCore.auto.wire.annotation.Employee" name="emp">
 		<property name="name" value="deepak" />
 	</bean>

@@ -1,10 +1,13 @@
 package com.springCore.auto.wire.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Employee {
 	private String name;
-//	@Autowired
+	@Autowired
+	@Qualifier("address2")
+	//qualifier used to differentiate beans by name 
 	private Address address;
 	public String getName() {
 		return name;
@@ -12,7 +15,7 @@ public class Employee {
 	public void setName(String name) {
 		this.name = name;
 	}
-	@Autowired
+//	@Autowired
 	public Employee(Address address) {
 		super();
 		this.address = address;
